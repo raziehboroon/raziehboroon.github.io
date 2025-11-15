@@ -11,7 +11,7 @@ const Projects = ({ height }) => {
     <section className={`projects ${height && "max-height"}`}>
       <div className="section">
         <div className="title">
-          <h2>Project</h2>
+          <h2>Projects</h2>
           <div className="title-underline"></div>
         </div>
         <div className="card-container">

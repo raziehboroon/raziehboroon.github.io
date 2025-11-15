@@ -8,15 +8,19 @@ import { AiFillCaretRight } from "react-icons/ai";
 
 const About = ({ height }) => {
   const skills = [
-    "HTML",
-    "CSS",
+    "HTML5",
+    "CSS3",
     "SASS",
     "Bootstrap",
     "JavaScript (ES6+)",
     "React.js",
-    "Redux",
-    "VS Code",
-    "Git",
+    "Typescript",
+    "Familiar with Next.js",
+    "Restful APIs",
+    "Familiar with Material-UI, Age-Grid, Ant-Design, React-Query, Redux",
+    "Figma – UI/UX design and prototyping",
+    "Git – version control",
+    "Jira(Scrum) – Agile/scrum",
   ];
   return (
     <section className={`about ${height && "max-height"}`}>
@@ -40,8 +44,7 @@ const About = ({ height }) => {
               <div className="title-underline"></div>
             </div>
             <p>
-              Hello! My name is Razieh, I have master degree in Information
-              Technology Engineering. I'm able to work with the following
+              I have master degree in Information Technology Engineering. I'm able to work with the following
               technologies:
             </p>
             <ul>

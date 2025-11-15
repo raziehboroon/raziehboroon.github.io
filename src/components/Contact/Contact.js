@@ -29,8 +29,8 @@ const Contact = ({ height }) => {
               </span>
             </a>
             <br />
-            <br />
-            Can also reach me through this number<span> +98-***-****</span>
+            {/* <br />
+            Can also reach me through this number<span> +98-***-****</span> */}
           </h4>
         </div>
         {height && (
