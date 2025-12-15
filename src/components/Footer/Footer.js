@@ -1,7 +1,7 @@
 import "./Footer.scss";
 import React from "react";
 // Function(s)
-import { getDate } from "../../helper/functions";
+import { getDate } from "../../utils/helpers";
 // Icon(s)
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
 

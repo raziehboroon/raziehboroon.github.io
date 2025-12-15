@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { goToTop } from "../../helper/functions";
+import { goToTop } from "../../utils/helpers";
 
 const Navbar = () => {
   const [showDropDown, setShowDropDown] = useState(false);

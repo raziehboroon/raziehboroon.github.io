@@ -1,8 +1,5 @@
 import "./Banner.scss";
-import React from "react";
-// Component(s)
 import ImageFrame from "../ImageFrame/ImageFrame";
-// Icon(s)
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Banner = () => {
@@ -35,12 +32,6 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* <div className="profile-img">
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/images/RaziehBoroon.jpg`}
-            alt="myPicture"
-          />
-        </div> */}
         <ImageFrame
           src={`${process.env.PUBLIC_URL}/assets/images/IMG_9677-resized.JPG`}
           name="myPicture"
