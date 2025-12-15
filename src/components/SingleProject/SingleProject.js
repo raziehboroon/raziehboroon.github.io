@@ -2,6 +2,7 @@ import "./SingleProject.scss";
 import React from "react";
 // Icons
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { LinkOpener } from "../../utils/helpers";
 
 const SingleProject = ({ image, name, description, git, netlify }) => {
   return (
@@ -16,12 +17,14 @@ const SingleProject = ({ image, name, description, git, netlify }) => {
           <h5>{description}</h5>
         </div>
         <div className="project-links icons">
-          <a href={git} target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href={netlify} target="_blank" rel="noopener noreferrer">
-            <FaExternalLinkAlt />
-          </a>
+          {LinkOpener({
+          href:git,
+          content:<FaGithub />,
+          })}
+          {LinkOpener({
+              href:netlify,
+              content:<FaExternalLinkAlt />,
+          })}
         </div>
       </div>
     </div>

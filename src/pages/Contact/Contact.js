@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // Icon(s)
 import { FiAtSign } from "react-icons/fi";
+import { EMAIL_ADD } from "../../utils/constant";
 
 const Contact = ({ height }) => {
   return (
@@ -20,7 +21,7 @@ const Contact = ({ height }) => {
         <div className="contact-container">
           <h4>
             If you are looking to get ahold of me, you can send me an email at
-            <a href="mailto:razieh.boroon@gmail.com" target="noopener">
+            <a href={EMAIL_ADD} target="noopener">
               <span>
                 {" "}
                 Razieh.Boroon

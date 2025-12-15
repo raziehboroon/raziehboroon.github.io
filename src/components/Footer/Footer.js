@@ -1,26 +1,31 @@
 import "./Footer.scss";
 import React from "react";
 // Function(s)
-import { getDate } from "../../utils/helpers";
+import { getDate, LinkOpener } from "../../utils/helpers";
 // Icon(s)
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { EMAIL_ADD, GITHUB_ADD, LINKEDIN_ADD, TWITTER_ADD } from "../../utils/constant";
 
 const Footer = () => {
   return (
     <footer>
       <div className="contact-links">
-        <a href="https://www.linkedin.com/in/razieh-boroon/" target="noopener">
-          <FaLinkedin />
-        </a>
-        <a href="https://github.com/raziehboroon" target="noopener noreferrer">
-          <FaGithub />
-        </a>
-        <a href="https://twitter.com/raziehboroon" target="noopener noreferrer">
-          <FaTwitter />
-        </a>
-        <a href="mailto:razieh.boroon@gmail.com" target="noopener noreferrer">
-          <FaEnvelope />
-        </a>
+        {LinkOpener({
+          href:LINKEDIN_ADD,
+          content:<FaLinkedin />,
+        })}
+        {LinkOpener({
+            href:GITHUB_ADD,
+            content:<FaGithub />,
+        })}
+        {LinkOpener({
+          href:TWITTER_ADD,
+          content:<FaTwitter />,
+        })}
+        {LinkOpener({
+          href:EMAIL_ADD,
+          content:<FaEnvelope />,
+        })}
       </div>
       <h4>
         <span>&copy;{getDate()}</span>

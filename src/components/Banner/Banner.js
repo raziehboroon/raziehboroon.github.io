@@ -1,6 +1,8 @@
 import "./Banner.scss";
 import ImageFrame from "../ImageFrame/ImageFrame";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { LinkOpener } from "../../utils/helpers";
+import { GITHUB_ADD, LINKEDIN_ADD, TWITTER_ADD } from "../../utils/constant";
 
 const Banner = () => {
   return (
@@ -11,27 +13,20 @@ const Banner = () => {
           <h1>Razieh Boroon</h1>
           <h4>I'm a Front-End Developer.</h4>
           <div className="social-links icons">
-            <a
-              href="https://www.linkedin.com/in/razieh-boroon/"
-              target="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/raziehboroon"
-              target="noopener noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://twitter.com/raziehboroon"
-              target="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
+            {LinkOpener({
+              href:LINKEDIN_ADD,
+              content:<FaLinkedin />,
+            })}
+            {LinkOpener({
+                href:GITHUB_ADD,
+                content:<FaGithub />,
+            })}
+            {LinkOpener({
+              href:TWITTER_ADD,
+              content:<FaTwitter />,
+            })}
           </div>
         </div>
-
         <ImageFrame
           src={`${process.env.PUBLIC_URL}/assets/images/IMG_9677-resized.JPG`}
           name="myPicture"
