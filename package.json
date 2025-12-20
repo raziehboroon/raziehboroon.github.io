@@ -19,7 +19,6 @@
   "build": "vite build",
   "preview": "vite preview"
 },
-  "homepage": "https://raziehboroon.github.io/raziehboroon.github.io",
   "eslintConfig": {
     "extends": [
       "react-app",
