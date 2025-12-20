@@ -10,7 +10,7 @@ const Contact = ({ height }) => {
     <section
       className={`contact ${height && "max-height"}`}
       style={{
-        background: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), URL(${process.env.PUBLIC_URL}/assets/images/contact-us.jpg) center/cover scroll no-repeat`,
+        background: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), URL(/assets/images/contact-us.jpg) center/cover scroll no-repeat`,
       }}
     >
       <div className="section contact-center">

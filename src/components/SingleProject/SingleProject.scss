@@ -1,4 +1,5 @@
-@import "../../App.scss";
+@use "../../assets/styles/index.scss" as *;
+
 .card {
   box-shadow: $dark-shadow;
   background-color: $clr-white;

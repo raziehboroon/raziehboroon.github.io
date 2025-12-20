@@ -1,4 +1,5 @@
-@import "../../App.scss";
+@use "../../assets/styles/index.scss" as *;
+
 footer {
   min-height: 8rem;
   background: $clr-grey-1;

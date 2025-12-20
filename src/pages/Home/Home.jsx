@@ -1,5 +1,4 @@
 import "./Home.scss";
-import React from "react";
 // Components
 import Banner from "../../components/Banner/Banner";
 import About from "../About/About";

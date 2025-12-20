@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Project Details info
 import { data } from "../../data.js";
 // Component(s)
-import SingleProject from "../../components/SingleProject/SingleProject.js";
+import SingleProject from "../../components/SingleProject/SingleProject.jsx";
 
 const Projects = ({ height }) => {
   return (

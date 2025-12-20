@@ -28,11 +28,11 @@ const About = ({ height }) => {
         <div className="about-content">
           <div className="about-image">
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/about.jpg`}
+              src={`/assets/images/about.jpg`}
               alt="about"
             />
             {/* <ImageFrame
-              src={`${process.env.PUBLIC_URL}/assets/images/keyboard.jpg`}
+              src={`/assets/images/keyboard.jpg`}
               name="keyboard"
               alignment={false}
             /> */}
